@@ -56,7 +56,13 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_basedCase {
 //
 //	final static String hbefaFileCold = "shared-svn/projects/matsim-germany/hbefa/hbefa-files/v3.2/EFA_ColdStart_vehcat_2005average.txt";
 //	final static String hbefaFileWarm = "shared-svn/projects/matsim-germany/hbefa/hbefa-files/v3.2/EFA_HOT_vehcat_2005average.txt";
-	final static String runDirectory = "output-berlin-v5.5-1pct_baseCase_100Iterations/";
+
+	//*****for policyCase_PlanB*****
+	//final static String runDirectory = "output-berlin-v5.5-1pct_PlanB_Network2_Version1_secondSuccessfulRun_100Iterations/";
+	//*****for policyCase_PlanC*****
+	final static String runDirectory = "output-berlin-v5.5-1pct_PlanC_firstSuccessfulRun_100Iterations/";
+	//*****for basedCase*****
+	//final static String runDirectory = "output-berlin-v5.5-1pct_baseCase_100Iterations/";
 	final static String runId = "berlin-v5.5-1pct";
 
 	final static String hbefaFileCold = "sample_EFA_ColdStart_vehcat_2005average.txt";
