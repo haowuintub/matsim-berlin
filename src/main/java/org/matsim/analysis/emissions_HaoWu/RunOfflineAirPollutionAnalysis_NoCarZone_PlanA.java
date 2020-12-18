@@ -47,22 +47,25 @@ import org.matsim.vehicles.VehicleUtils;
 
 public class RunOfflineAirPollutionAnalysis_NoCarZone_PlanA {
 
+	/* *********************************************************************** *
+	   link of Google Drive for the input data of this class from Car-free zone project:
+	   https://drive.google.com/drive/folders/1s5Tcp7gtQDBN84DCsI0LqxvLJEmlxR4d?usp=sharing
+	 * *********************************************************************** */
 //	final static String runDirectory = "public-svn/matsim/scenarios/countries/de/berlin/berlin-v5.4-10pct/output-berlin-v5.4-10pct/";
 //	final static String runId = "berlin-v5.4-10pct";
 //
 //	final static String hbefaFileCold = "shared-svn/projects/matsim-germany/hbefa/hbefa-files/v3.2/EFA_ColdStart_vehcat_2005average.txt";
 //	final static String hbefaFileWarm = "shared-svn/projects/matsim-germany/hbefa/hbefa-files/v3.2/EFA_HOT_vehcat_2005average.txt";
-
 	final static String runDirectory = "output-berlin-v5.5-1pct-subpop_PlanA_Version1_secondSuccessfulRun_100Iterations/";
 	final static String runId = "berlin-v5.5-1pct";
 
 	final static String hbefaFileCold = "sample_EFA_ColdStart_vehcat_2005average.txt";
 	final static String hbefaFileWarm = "sample_EFA_HOT_vehcat_2005average.txt";
-	
+
 	public static void main(String[] args) {
 		
 //		String rootDirectory = null;
-		String rootDirectory = "/Users/haowu/Workspace/git/advanced-MATSim_HA/Open-Berlin-Scenario_continuously-updated/matsim-berlin/scenarios/emissions-Input";
+		String rootDirectory = "scenarios/berlin-v5.5-1pct/input/emissions_HaoWu";
 
 //		if (args.length == 1) {
 //			rootDirectory = args[0];
