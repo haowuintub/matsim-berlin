@@ -1,4 +1,4 @@
-Case;VehCat;Year;TrafficScenario;Component;RoadCat;TrafficSit;Gradient;V_weighted;EFA_weighted;AmbientCondPattern;EFA_WTT_weighted;EFA_WTW_weighted
+﻿Case;VehCat;Year;TrafficScenario;Component;RoadCat;TrafficSit;Gradient;V_weighted;EFA_weighted;AmbientCondPattern;EFA_WTT_weighted;EFA_WTW_weighted
 2020_Average_perVehCat_Bln_carOnly[4.1];pass. car;2020;REF D HB41;HC;MW;RUR/MW/>130/Freeflow;0%;142.7671356;0.025177279;ØGermany;;
 2020_Average_perVehCat_Bln_carOnly[4.1];pass. car;2020;REF D HB41;HC;MW;RUR/MW/>130/St+Go;0%;17.91503143;0.020191479;ØGermany;;
 2020_Average_perVehCat_Bln_carOnly[4.1];pass. car;2020;REF D HB41;HC;MW;URB/MW-Nat./80/Freeflow;0%;79.03366089;0.008116825;ØGermany;;
