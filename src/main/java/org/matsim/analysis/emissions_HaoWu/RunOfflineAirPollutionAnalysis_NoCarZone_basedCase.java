@@ -65,8 +65,8 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_basedCase {
 	//final static String runDirectory = "output-berlin-v5.5-1pct_baseCase_100Iterations/";
 	final static String runId = "berlin-v5.5-1pct";
 
-	final static String hbefaFileCold = "sample_EFA_ColdStart_vehcat_2005average.txt";
-	final static String hbefaFileWarm = "sample_EFA_HOT_vehcat_2005average.txt";
+	final static String hbefaFileCold = "EFA_ColdStart_Vehcat_2020_Average_perVehCat_Bln_carOnly.csv";
+	final static String hbefaFileWarm = "EFA_HOT_Vehcat_2020_Average_perVehCat_Bln_carOnly.csv";
 	
 	public static void main(String[] args) {
 		
@@ -168,12 +168,14 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_basedCase {
 		VehicleUtils.setHbefaTechnology( carEngineInformation, "average" );
 		VehicleUtils.setHbefaSizeClass( carEngineInformation, "average" );
 		VehicleUtils.setHbefaEmissionsConcept( carEngineInformation, "average" );
-		
+
+/*		//?????machbar?????
+		//?????machbar?????
 		EngineInformation freightEngineInformation = freightVehicleType.getEngineInformation();
 		VehicleUtils.setHbefaVehicleCategory( freightEngineInformation, HbefaVehicleCategory.HEAVY_GOODS_VEHICLE.toString());
 		VehicleUtils.setHbefaTechnology( freightEngineInformation, "average" );
 		VehicleUtils.setHbefaSizeClass( freightEngineInformation, "average" );
-		VehicleUtils.setHbefaEmissionsConcept( freightEngineInformation, "average" );
+		VehicleUtils.setHbefaEmissionsConcept( freightEngineInformation, "average" );*/
 		
 		// public transit vehicles should be considered as non-hbefa vehicles
 		for (VehicleType type : scenario.getTransitVehicles().getVehicleTypes().values()) {

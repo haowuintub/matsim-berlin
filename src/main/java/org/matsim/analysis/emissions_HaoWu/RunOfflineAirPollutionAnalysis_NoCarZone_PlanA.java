@@ -59,8 +59,8 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_PlanA {
 	final static String runDirectory = "output-berlin-v5.5-1pct-subpop_PlanA_Version1_secondSuccessfulRun_100Iterations/";
 	final static String runId = "berlin-v5.5-1pct";
 
-	final static String hbefaFileCold = "sample_EFA_ColdStart_vehcat_2005average.txt";
-	final static String hbefaFileWarm = "sample_EFA_HOT_vehcat_2005average.txt";
+	final static String hbefaFileCold = "EFA_ColdStart_Vehcat_2020_Average_perVehCat_Bln_carOnly.csv";
+	final static String hbefaFileWarm = "EFA_HOT_Vehcat_2020_Average_perVehCat_Bln_carOnly.csv";
 
 	public static void main(String[] args) {
 		
