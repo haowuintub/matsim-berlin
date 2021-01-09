@@ -163,13 +163,13 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_PlanA {
 		VehicleUtils.setHbefaSizeClass( carEngineInformation, "average" );
 		VehicleUtils.setHbefaEmissionsConcept( carEngineInformation, "average" );
 
-		//?????machbar?????
+/*		//?????machbar?????
 		//?????machbar?????
 		EngineInformation freightEngineInformation = freightVehicleType.getEngineInformation();
 		VehicleUtils.setHbefaVehicleCategory( freightEngineInformation, HbefaVehicleCategory.HEAVY_GOODS_VEHICLE.toString());
 		VehicleUtils.setHbefaTechnology( freightEngineInformation, "average" );
 		VehicleUtils.setHbefaSizeClass( freightEngineInformation, "average" );
-		VehicleUtils.setHbefaEmissionsConcept( freightEngineInformation, "average" );
+		VehicleUtils.setHbefaEmissionsConcept( freightEngineInformation, "average" );*/
 
 
 		// vehicles for carInternal ***
