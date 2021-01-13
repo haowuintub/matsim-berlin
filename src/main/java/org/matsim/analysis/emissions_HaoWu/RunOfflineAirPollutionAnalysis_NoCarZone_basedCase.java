@@ -33,6 +33,7 @@ import org.matsim.core.config.Config;
 import org.matsim.core.config.ConfigUtils;
 import org.matsim.core.controler.AbstractModule;
 import org.matsim.core.controler.Injector;
+import org.matsim.core.events.EventsManagerImpl;
 import org.matsim.core.events.EventsUtils;
 import org.matsim.core.events.MatsimEventsReader;
 import org.matsim.core.events.algorithms.EventWriterXML;
@@ -152,7 +153,7 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_basedCase {
 				link.getAttributes().putAttribute("hbefa_road_type", "RUR/MW/>130");
 			} else{
 				throw new RuntimeException("Link not considered...");
-			}			
+			}
 		}
 		
 		// vehicles
@@ -189,8 +190,14 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_basedCase {
 		}
 		
 		// the following is copy paste from the example...
-		
-        EventsManager eventsManager = EventsUtils.createEventsManager();
+
+		//Use the (old) single threaded events manager, since the multiThread one has problems with the hugh number of events: Exception: "queue full",
+		// see also https://github.com/matsim-org/matsim-libs/issues/1091
+		//The parallel EventsManager seems to work, if the number of Events is reduced, e.g. by reducing the number of links for which emissions should be calculated.
+		// I did this by setting other link length to 0, so they get ignored. (Not a good solution but it was a nice quick fix/test)
+		// KMT Jan'21
+        // EventsManager eventsManager = EventsUtils.createEventsManager();  //This will at the moment create the ParallelEventsManager ... which causes problems
+		EventsManager eventsManager = new EventsManagerImpl();  //The old, single threaded one.. running :)
 
 		AbstractModule module = new AbstractModule(){
 			@Override
