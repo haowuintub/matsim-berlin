@@ -61,9 +61,9 @@ public class RunOfflineAirPollutionAnalysis_NoCarZone_basedCase {
 	//*****for policyCase_PlanB*****
 	//final static String runDirectory = "output-berlin-v5.5-1pct_PlanB_Network2_Version1_secondSuccessfulRun_100Iterations/";
 	//*****for policyCase_PlanC*****
-	final static String runDirectory = "output-berlin-v5.5-1pct_PlanC_firstSuccessfulRun_100Iterations/";
+	//final static String runDirectory = "output-berlin-v5.5-1pct_PlanC_firstSuccessfulRun_100Iterations/";
 	//*****for basedCase*****
-	//final static String runDirectory = "output-berlin-v5.5-1pct_baseCase_100Iterations/";
+	final static String runDirectory = "output-berlin-v5.5-1pct_baseCase_100Iterations/";
 	final static String runId = "berlin-v5.5-1pct";
 
 	final static String hbefaFileCold = "EFA_ColdStart_Vehcat_2020_Average_perVehCat_Bln_carOnly.csv";
