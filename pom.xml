@@ -182,6 +182,14 @@
 			<!-- <version>94a0b679d7</version> -->
         </dependency>
 
+		<!-- This is for GenerateSingleAirPollutionValue.java and GenerateAirPollutionSpatialPlots.java -->
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.71</version>
+		</dependency>
+		<!-- This is for GenerateSingleAirPollutionValue.java and GenerateAirPollutionSpatialPlots.java -->
+
 		<dependency>
 		<!-- This is the matsim "freight" contrib: -->
 			<groupId>org.matsim.contrib</groupId>
