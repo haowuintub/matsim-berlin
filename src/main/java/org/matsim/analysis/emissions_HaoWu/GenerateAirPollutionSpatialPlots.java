@@ -38,9 +38,13 @@ import org.matsim.contrib.emissions.analysis.EmissionGridAnalyzer;
 import org.matsim.core.config.Config;
 import org.matsim.core.config.ConfigUtils;
 import org.matsim.core.scenario.ScenarioUtils;
+import org.matsim.core.utils.gis.ShapeFileReader;
+import org.opengis.feature.simple.SimpleFeature;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -171,10 +175,24 @@ public class GenerateAirPollutionSpatialPlots {
     }
 
     private Geometry createBoundingBox() {
-        return new GeometryFactory().createPolygon(new Coordinate[]{
+/*        return new GeometryFactory().createPolygon(new Coordinate[]{
                 new Coordinate(xMin, yMin), new Coordinate(xMax, yMin),
                 new Coordinate(xMax, yMax), new Coordinate(xMin, yMax),
                 new Coordinate(xMin, yMin)
-        });
+        });*/
+
+        // haowu ***
+        //same kind of BoundingBox but using my own shapeFile as the BoundingBox
+        String areaShapeFile = "/Users/haowu/Workspace/QGIS/MATSim_HA2/NoCarZone_withRoundabout/NoCarZone_withRoundabout.shp";
+        Collection<SimpleFeature> features = (new ShapeFileReader()).readFileAndInitialize(areaShapeFile);
+
+        Map<String, Geometry> zoneGeometries = new HashMap<>();
+        for (SimpleFeature feature : features) {
+            zoneGeometries.put((String)feature.getAttribute("Name"),(Geometry)feature.getDefaultGeometry());
+        }
+
+        Geometry areaGeometry = zoneGeometries.get(("NoCarZone"));
+        return areaGeometry;
+        // haowu ***
     }
 }
