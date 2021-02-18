@@ -80,7 +80,7 @@ public class GenerateAirPollutionSpatialPlots {
 
     // haowu ***
     // Program Arguments:
-    //baseCase: -dir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_baseCase_100Iterations -runId berlin-v5.5-1pct -outDir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_baseCase_100Iterations/
+    //baseCase: -dir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_baseCase_100Iterations/ -runId berlin-v5.5-1pct -outDir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_baseCase_100Iterations/
     //PlanA: -dir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct-subpop_PlanA_Version1_secondSuccessfulRun_100Iterations/ -runId berlin-v5.5-1pct -outDir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct-subpop_PlanA_Version1_secondSuccessfulRun_100Iterations/
     //PlanB: -dir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_PlanB_Network2_Version1_secondSuccessfulRun_100Iterations/ -runId berlin-v5.5-1pct -outDir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_PlanB_Network2_Version1_secondSuccessfulRun_100Iterations/
     //PlanC: -dir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_PlanC_firstSuccessfulRun_100Iterations -runId berlin-v5.5-1pct -outDir scenarios/berlin-v5.5-1pct/input/emissions_HaoWu/output-berlin-v5.5-1pct_PlanC_firstSuccessfulRun_100Iterations/
