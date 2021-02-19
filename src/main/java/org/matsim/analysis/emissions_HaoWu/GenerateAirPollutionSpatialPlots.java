@@ -65,10 +65,10 @@ public class GenerateAirPollutionSpatialPlots {
     private static final double xMax = 4592318.063;
     private static final double yMax = 5821261.458;*/
     //bigger BoundingBox:
-    private static final double xMin = 4588081.472-(4592318.063-4588081.472);
-    private static final double yMin = 5818614.185-(5821261.458-5818614.185);
-    private static final double xMax = 4592318.063+(4592318.063-4588081.472);
-    private static final double yMax = 5821261.458+(5821261.458-5818614.185);
+    private static final double xMin = 4588081.472-1/3*(4592318.063-4588081.472);
+    private static final double yMin = 5818614.185-1/3*(5821261.458-5818614.185);
+    private static final double xMax = 4592318.063+1/3*(4592318.063-4588081.472);
+    private static final double yMax = 5821261.458+1/3*(5821261.458-5818614.185);
     // haowu ***
 
     private static final double gridSize = 100.;
