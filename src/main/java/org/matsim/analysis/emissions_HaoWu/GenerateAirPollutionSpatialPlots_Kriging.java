@@ -120,7 +120,7 @@ public class GenerateAirPollutionSpatialPlots_Kriging {
         config.network().setInputFile(/*runDir +*/ runId + ".output_network.xml.gz");
         Scenario scenario = ScenarioUtils.loadScenario(config);
 
-        double binSize = 200000; // make the bin size bigger than the scenario has seconds
+        double binSize = 3600; // make the bin size bigger than the scenario has seconds
         Network network = scenario.getNetwork();
 
         EmissionGridAnalyzer analyzer = new EmissionGridAnalyzer.Builder()
